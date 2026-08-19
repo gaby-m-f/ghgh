@@ -1,7 +1,7 @@
 :root{
-    --cor-principal: #595959dd ;
+    --cor-principal: #000000dd ;
     --cor-secundaria: #000000; 
-    --cor-destaque: #000000;
+    --cor-destaque: #1b257c;
     --cor-texto: #ffffff;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .cor-titulo {
-    color: #22d1d1;
+    color: #2ba0ce;
 }
 
 .caixa-principal{

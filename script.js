@@ -60,136 +60,83 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Qual é a maior lua do Sistema Solar, superando até mesmo o planeta Mercúrio em tamanho?",
+        enunciado: "Qual planeta do Sistema Solar tem o eixo de rotação tão inclinado que ele praticamente rola de lado ao redor do Sol?",
         alternativas: [
             {
-                texto: "Agricultura",
+                texto: "Netuno",
                 afirmacao: "Falso"
             },
             {
-                texto: "Pecuária",
-                afirmacao: "Falso"
-            },
-            {
-                texto: "Extrativismo",
-                afirmacao: "Falso"
-            },
-            {
-                texto: "Ganimedes",
+                texto: "Urânio",
                 afirmacao: "Verdadeiro"
             }
         ]
     },
     {
-        enunciado: "As áreas rurais são mais propensas a ter uma qualidade de ar melhor?",
+        enunciado: "Qual planeta é conhecido como Planeta Vermelho?",
         alternativas: [
             {
-                texto: "Sim",
+                texto: "Marte",
                 afirmacao: "Verdadeiro"
             },
             {
-                texto: "Não",
+                texto: "Saturno",
                 afirmacao: "Falso"
             }
         ]
     },
     {
-        enunciado: "Qual é o nome dado ao movimento migratório em que a pessoa se desloca da área urbana para a rural?",
+        enunciado: "Qual é o satélite natural da Terra?",
         alternativas: [
             {
-                texto: "Sedentarismo",
+                texto: "Sol",
                 afirmacao: "Falso"
             },
             {
-                texto: "Êxodo rural",
+                texto: "Lua",
                 afirmacao: "Verdadeiro"
-            },
-            {
-                texto: "Migração",
-                afirmacao: "Falso"
-            },
-            {
-                texto: "Êxodo urbano",
-                afirmacao: "Falso"
             }
         ]
     },
     {
-        enunciado: "A população urbana é maior que a população rural?",
+        enunciado: "Uma estrela com massa muito maior que a do Sol pode terminar sua vida como uma supernova. Qual pode ser um dos possíveis remanescentes desse evento?",
         alternativas: [
             {
-                texto: "Verdadeiro",
+                texto: "Um buraco negro",
                 afirmacao: "Verdadeiro"
             },
             {
-                texto: "Falso",
+                texto: "Um asteroide",
                 afirmacao: "Falso"
             }    
         ]
     },
     {
-        enunciado: "Qual o percentual dos municípios que são considerados rurais, segundo o IBGE?",
+        enunciado: "Qual é a principal razão pela qual vemos diferentes fases da Lua?",
         alternativas: [
             {
-                texto: "80,5%",
+                texto: "A sombra da Terra cobre a Lua todas as noites.",
                 afirmacao: "Falso"
             },
             {
-                texto: "60,4%",
+                texto: "Observamos diferentes porções da metade iluminada da Lua conforme ela orbita a Terra.",
                 afirmacao: "Verdadeiro"
             },
-            {
-                texto: "51,3%",
-                afirmacao: "Falso"
-            },
-            {
-                texto: "26,1%",
-                afirmacao: "Falso"
-            }
         ]
     },
     {
-        enunciado: "Qual dos seguintes fatores é um dos principais motivos para a migração de pessoas do campo para a cidade?",
+        enunciado: "Qual é a principal fonte de energia do Sol?",
         alternativas: [
             {
-                texto: "Desejo de viver em áreas com menor densidade populacional",
+                texto: "Fissão nuclear",
                 afirmacao: "Falso"
             },
             {
-                texto: "Necessidade de manter tradições agrícolas",
-                afirmacao: "Falso"
-            },
-            {
-                texto: "Preferência por um estilo de vida mais tranquilo e isolado",
-                afirmacao: "Falso"
-            },
-            {
-                texto: "Busca por melhores oportunidades de emprego e educação",
+                texto: "Fusão nuclear",
                 afirmacao: "Verdadeiro"
             }
         ]
-    },
-    {
-        enunciado: "Qual dos seguintes benefícios é frequentemente associado à vida no campo em comparação com a vida na cidade?",
-        alternativas: [
-            {
-                texto: "Maior acesso a oportunidades de emprego",
-                afirmacao: "Falso"
-            },
-            {
-                texto: "Maior proximidade com centros comerciais e culturais",
-                afirmacao: "Falso"
-            },
-            {
-                texto: "Menor custo de vida",
-                afirmacao: "Verdadeiro"
-            },
-            {
-                texto: "Maior acesso a serviços de saúde especializados",
-                afirmacao: "Falso"
-            }
-        ]
-    }    
+    }  
 ];
 
 
@@ -198,7 +145,7 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-    if (atual >= perguntas.length) {
+    if (atual >= caixaResultado.length) {
         mostraResultado();
         return;
     }
